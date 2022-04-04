@@ -45,7 +45,7 @@ Material:
     - _Width: 0.1
     m_Colors:
     - _BaseColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 0}
-    - _Position: {r: 0.5, g: 0.97, b: 0, a: 0}
+    - _Position: {r: 0.39, g: 0.97, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &8756980728793440016
 MonoBehaviour:
