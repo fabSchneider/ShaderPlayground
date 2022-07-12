@@ -5,9 +5,9 @@ using UnityEngine;
 namespace Fab.ShaderPlayground
 {
     [ExecuteInEditMode]
-    public class PointsController : MonoBehaviour
+    public class SDFPointsController : MonoBehaviour
     {
-        const int MAX_POINTS_COUNT = 32;
+        const int MAX_POINTS_COUNT = 256;
 
         Renderer _renderer;
         MaterialPropertyBlock mpb;
@@ -16,7 +16,7 @@ namespace Fab.ShaderPlayground
         public Vector2[] points;
 
         void Awake()
-        { 
+        {
             _renderer = GetComponent<Renderer>();
             mpb = new MaterialPropertyBlock();
         }
@@ -28,7 +28,7 @@ namespace Fab.ShaderPlayground
 
 
         void SendPointsToRenderer()
-        { 
+        {
             _renderer.GetPropertyBlock(mpb);
 
             int count = Mathf.Min(points.Length, positions.Length);
